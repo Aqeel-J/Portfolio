@@ -1,5 +1,5 @@
 /* Navbar.scss */
-@import '../styles/variables';
+@use '../styles/variables' as *;
 
 .navbar {
   position: fixed;
