@@ -1,0 +1,194 @@
+/* Home Section Styles */
+
+@use '../styles/variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.section-home {
+  position: relative;
+  background: linear-gradient(rgba(45, 33, 26, 0.3), rgba(45, 33, 26, 0.3)),
+    url('../assets/abstract-dot-gradient-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  /* Top-left dots */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 24px;
+    /* Length of dotted line */
+    height: 180px;
+    /* Dot height */
+    background-image: radial-gradient($primary-color 4.5px, transparent 5.5px);
+    background-size: 35px 35px;
+    /* Dot spacing */
+    background-repeat: repeat-y;
+  }
+
+  /* Bottom-right dots */
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 100px;
+    right: 65px;
+    width: 24px;
+    height: 180px;
+    max-width: 100%;
+    background-image: radial-gradient($white 4.5px, transparent 5.5px);
+    background-size: 35px 35px;
+    background-repeat: repeat-y;
+  }
+
+  .col-2 {
+    &:first-child {
+      text-align: left;
+    }
+
+    &:last-child {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 0 0 25px 0;
+    }
+  }
+}
+
+/* Typing text animation */
+.typing-text {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid $primary-color;
+  animation: typing 2s steps(14, end) forwards, blink 0.75s step-end infinite;
+  font-size: 2rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 14ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.doodle-arrow {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  transform: translate(50%, 50%) rotate(-50deg);
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: $white;
+}
+
+.blob-wrapper {
+  position: relative;
+  height: 300px; // height of the blob
+  overflow: visible; // allow image to pop out on top
+}
+
+.blob {
+  width: 300px;
+  height: 300px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  overflow: hidden; // crop only inside the blob
+  position: relative;
+  background-color: $primary-color;
+}
+
+.blob-img {
+  position: absolute;
+  top: -160px; // move the image upward to pop out
+  left: 0;
+  width: auto;
+  height: 200%; // maintain image aspect ratio
+  object-fit: cover;
+
+  &-top {
+    position: absolute;
+    top: -160px; // move the image upward to pop out
+    left: 0;
+    width: auto;
+    clip-path: inset(0px 0px 250px 0px);
+    height: 200%; // maintain image aspect ratio
+    object-fit: cover;
+  }
+}
+
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 25px;
+  padding: 40px 0;
+
+  .icon-wrapper {
+    height: 48px;
+    width: 48px;
+    background-color: $secondary-color;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+      .logo-icon {
+        width: 100%;
+        height: 100%;
+        color: $primary-color;
+      }
+    }
+
+    .logo-icon {
+      width: 24px;
+      height: 24px;
+      color: $white;
+    }
+  }
+}
+
+/* Fancy Heading */
+.fancy-heading {
+  font-size: 3rem;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  color: $white;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  span {
+    color: $primary-color;
+    font-weight: 800;
+    background: $primary-color;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    position: relative;
+  }
+}

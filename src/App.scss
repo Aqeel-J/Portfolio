@@ -1,0 +1,196 @@
+@use './styles/variables' as *;
+
+/* =========================
+   RESET & GLOBAL STYLES
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+  display: block;
+  overflow-y: overlay;
+  overflow-x: hidden;
+
+  // Custom scrollbar
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+/* =========================
+   LAYOUT UTILITIES
+   ========================= */
+.section {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 0;
+  box-sizing: border-box;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &-2 {
+    justify-content: space-between;
+    margin: 30px auto;
+  }
+}
+
+.col {
+  flex-basis: 60%;
+  min-width: 375px;
+
+  &-2 {
+    flex-basis: 50%;
+    min-width: 350px;
+
+    img {
+      max-width: 100%;
+      padding: 50px 0;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 60px;
+      margin: 25px 0;
+    }
+
+    p {
+      color: $secondary-color;
+    }
+  }
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  margin: 2em 0;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background 0.5s;
+
+  &-primary {
+    background: $primary-color;
+    color: $white;
+
+    &:hover {
+      background: darken($primary-color, 20%);
+    }
+  }
+
+  &-white {
+    background: $white;
+    color: #582800;
+
+    &:hover {
+      background: #ccc;
+    }
+  }
+
+  &-darkgrey {
+    background: #515151;
+    color: $white;
+
+    &:hover {
+      background: #7a7a7a;
+    }
+  }
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+.title {
+  text-align: center;
+  margin: 1em auto 1.5em;
+  position: relative;
+  line-height: 3.75em;
+  color: $secondary-color;
+
+  &::after {
+    content: '';
+    background: $primary-color;
+    width: 5em;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &-large {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &-medium {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+}
+
+.max-width {
+  max-width: 40rem;
+  margin-top: 1rem;
+}

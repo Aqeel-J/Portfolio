@@ -1,0 +1,53 @@
+/* Services Section Styles */
+@use '../styles/variables' as *;
+
+.section-services {
+  position: relative;
+  background: url('../assets/contour-bg.png') no-repeat center/cover;
+  will-change: transform;
+
+  .icon {
+    color: $primary-color;
+    height: 72px;
+    width: 72px;
+  }
+}
+
+.services {
+  margin: 70px 0;
+
+  .col-3 {
+    flex-basis: 30%;
+    min-width: 300px;
+    margin-bottom: 30px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      background: $background-color;
+      padding: 2em;
+      border-radius: 1em;
+      min-height: 300px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin: 1em 0;
+      color: $white;
+    }
+
+    p {
+      font-size: 0.75rem;
+      color: $secondary-color;
+    }
+  }
+
+  .icon {
+    margin: 25px auto;
+    font-size: 60px;
+  }
+}

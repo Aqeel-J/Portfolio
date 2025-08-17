@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Project 1",
+        "description": "Description of Project 1.",
+        "imageKey": "project1",
+        "link": "https://your-project-link.com"
+    },
+    {
+        "id": 2,
+        "title": "Project 2",
+        "description": "Description of Project 2.",
+        "imageKey": "project2",
+        "link": "https://your-project-link.com"
+    },
+    {
+        "id": 3,
+        "title": "Project 3",
+        "description": "Description of Project 3.",
+        "imageKey": "project3",
+        "link": "https://your-project-link.com"
+    }
+]

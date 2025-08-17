@@ -1,0 +1,73 @@
+[
+    {
+        "name": "Angular",
+        "icon": "angular",
+        "alt": "Angular Logo",
+        "desc": "Built dynamic, modular SPAs using Angular with RxJS for reactive programming and NgRx for state management."
+    },
+    {
+        "name": "React",
+        "icon": "react",
+        "desc": "Expert in building fast, maintainable SPAs using React, Redux, and React Router. Skilled in hooks and Context API for state management."
+    },
+    {
+        "name": "Node.js",
+        "icon": "nodejs",
+        "alt": "Node JS Logo",
+        "desc": "Developed scalable RESTful APIs with Express.js, implementing JWT authentication and real-time features with Socket.io."
+    },
+    {
+        "name": "Java",
+        "icon": "java",
+        "alt": "Java Logo",
+        "desc": "Implemented multi-threaded backend services and desktop applications using Java SE and JavaFX with strong OOP principles."
+    },
+    {
+        "name": "HTML",
+        "icon": "html",
+        "alt": "HTML Logo",
+        "desc": "Crafted semantic, accessible HTML5 markup to create responsive layouts in collaboration with CSS and JavaScript."
+    },
+    {
+        "name": "CSS",
+        "icon": "css",
+        "alt": "CSS Logo",
+        "desc": "Styled responsive, modern web apps using CSS3, Flexbox, Grid, and pre-processors like SASS/SCSS."
+    },
+    {
+        "name": "JavaScript",
+        "icon": "javascript",
+        "alt": "JavaScript Logo",
+        "desc": "Skilled in ES6+ JavaScript features to build dynamic, interactive web experiences with event-driven architecture."
+    },
+    {
+        "name": "C#",
+        "icon": "csharp",
+        "alt": "C Sharp Logo",
+        "desc": "Built desktop applications and backend services using .NET framework, implementing MVVM design pattern in WPF."
+    },
+    {
+        "name": "C/C++",
+        "icon": "c",
+        "alt": "C and C++ Logo",
+        "desc": "Experienced in system programming, memory management, and performance optimization using C and C++."
+    },
+    {
+        "name": "PHP",
+        "icon": "php",
+        "alt": "PHP Logo",
+        "desc": "Developed server-side scripts for dynamic websites using PHP and MySQL, with focus on secure data handling."
+    },
+    {
+        "name": "Git",
+        "icon": "git",
+        "alt": "Git Logo",
+        "desc": "Proficient with Git for version control and collaborative workflows using branching, merging, and pull requests."
+    },
+    {
+        "name": "MongoDB",
+        "icon": "mongodb",
+        "alt": "MongoDB Logo",
+        "desc": "Designed and managed NoSQL databases for scalable web apps, implementing data schemas and aggregation pipelines."
+    }
+]

@@ -1,0 +1,83 @@
+/* About Section Styles */
+
+@use '../styles/variables' as *;
+
+.timeline {
+  min-width: 350px;
+  position: relative;
+  margin-left: 40px;
+  border-left: 3px solid $primary-color;
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+
+    .timeline-dot {
+      position: absolute;
+      left: -9px;
+      top: 0px;
+      width: 16px;
+      height: 16px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      // border: 1px solid white;
+      z-index: 1;
+    }
+
+    .timeline-content {
+      padding: 0 40px;
+      border-radius: 8px;
+      text-align: left;
+      margin-bottom: 50px;
+
+      h3 {
+        margin: 0 0 5px;
+      }
+
+      h5 {
+        margin: 0 0 10px;
+        color: $primary-color;
+        font-weight: 300;
+      }
+
+      p {
+        margin: 0;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.skills {
+  margin: 70px 0;
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 1em 0;
+    color: $white;
+  }
+
+  p {
+    font-size: 0.75rem;
+    color: $secondary-color;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: $background-color;
+    padding: 2em;
+    border-radius: 1em;
+    min-height: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .icon {
+    height: 150px;
+    width: 150px;
+    margin: 25px auto;
+  }
+}
