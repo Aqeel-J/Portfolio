@@ -21,7 +21,7 @@ import skillsData from '../assets/skillsData.json';
 // Icons
 import logoMap from '../assets/logoMap.js';
 
-import TimeLineItem from '../components/TimelineItem';
+import TimeLineItem from '../components/TimeLineItem.jsx';
 
 export default function About() {
     const [isOpen, setIsOpen] = useState(false);
