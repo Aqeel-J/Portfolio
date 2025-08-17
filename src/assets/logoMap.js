@@ -9,7 +9,7 @@ import CSSLogo from './css.svg';
 import PHPLogo from './php.svg';
 import CLogo from './c.svg';
 import GitLogo from './git.svg';
-import MongoDBLogo from './mongodb.svg';
+import MongoDBLogo from './Mongodb.svg';
 
 const logoMap = {
   angular: AngularLogo,
